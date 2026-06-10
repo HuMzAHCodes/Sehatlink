@@ -4,6 +4,7 @@ import FeatureCards from "./components/FeatureCards";
 import Specialties from "./components/Specialties";
 import Conditions from "./components/Conditions";
 import Partners from "./components/Partners";
+import NewsCarousel from "./components/NewsCarousel";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Specialties />
       <Conditions />
       <Partners />
+      <NewsCarousel />
     </div>
   );
 }
