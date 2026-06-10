@@ -1,0 +1,78 @@
+.featureCardsSection {
+  display: flex;
+  gap: 16px;
+  padding: 40px 80px;
+  background-color: #F5F5F5;
+  outline: 2px solid green; /* debug border */
+}
+
+/* Card */
+.card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge */
+.cardBadge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #F5A623;
+  color: #ffffff;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.badgeDot {
+  color: #27AE60;
+  font-size: 0.6rem;
+}
+
+/* Card Body */
+.cardBody {
+  padding: 16px;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 8px 0;
+}
+
+.cardDescription {
+  font-size: 0.85rem;
+  color: #666666;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}

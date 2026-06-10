@@ -1,0 +1,169 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: linear-gradient(135deg, #3B2A5A 0%, #1B2D6B 100%);
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid blue; /* debug border */
+}
+
+/* Left Side */
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 520px;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.3;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.heroAccent {
+  color: #F5A623;
+  font-weight: 700;
+}
+
+/* Badge */
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: fit-content;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.badgeIcon {
+  color: #27AE60;
+  font-size: 1.1rem;
+}
+
+/* Search Bar */
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 580px;
+}
+
+.locationField {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 6px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.locationInput {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  width: 100%;
+  padding: 14px 0;
+}
+
+.detectButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #1B2D6B;
+  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.detectIcon {
+  font-size: 1rem;
+}
+
+.divider {
+  width: 1px;
+  height: 36px;
+  background-color: #E0E0E0;
+  flex-shrink: 0;
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 2;
+  padding: 0 12px;
+}
+
+.searchIcon {
+  color: #999999;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  width: 100%;
+  padding: 14px 0;
+}
+
+.searchInput::placeholder,
+.locationInput::placeholder {
+  color: #999999;
+}
+
+.searchButton {
+  padding: 14px 28px;
+  background-color: #F5A623;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.searchButton:hover {
+  opacity: 0.9;
+}
+
+/* Right Side */
+.heroImageWrapper {
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.heroImage {
+  width: 420px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
