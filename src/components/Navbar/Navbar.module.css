@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  outline: 2px solid red; /* debug border */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.logoAccent {
+  color: #F5A623;
+}
+
+/* Nav Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #1B2D6B;
+}
+
+.chevron {
+  font-size: 0.85rem;
+  margin-top: 1px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  min-width: 200px;
+  padding: 8px 0;
+  z-index: 200;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 10px 16px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.dropdownItem:hover {
+  background-color: #F5F5F5;
+  color: #1B2D6B;
+}
+
+/* Nav Actions */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phoneButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1.5px solid #1B2D6B;
+  border-radius: 8px;
+  background: transparent;
+  color: #1B2D6B;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.phoneButton:hover {
+  background: #f0f3ff;
+}
+
+.phoneIcon {
+  font-size: 1rem;
+}
+
+.joinButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #F5A623;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.joinButton:hover {
+  opacity: 0.9;
+}
+
+.loginButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1B2D6B;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.loginButton:hover {
+  opacity: 0.9;
+}
