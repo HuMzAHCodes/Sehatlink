@@ -1,0 +1,221 @@
+.footer {
+  background-color: #2C2C2C;
+  color: #CCCCCC;
+  outline: 2px solid gold; /* debug border */
+}
+
+/* Top Grid */
+.footerTop {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 60px 80px 40px 80px;
+  border-bottom: 1px solid #444444;
+}
+
+/* Brand Column */
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerLogo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.footerLogoAccent {
+  color: #F5A623;
+}
+
+.brandDescription {
+  font-size: 0.82rem;
+  color: #AAAAAA;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Links Column */
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.columnTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 4px 0;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  font-size: 0.82rem;
+  color: #AAAAAA;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+}
+
+/* Right Column */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* App Links */
+.appLinksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appLinksTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.appButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1a1a1a;
+  border: 1px solid #555555;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.appButton:hover {
+  border-color: #ffffff;
+}
+
+.appIcon {
+  color: #ffffff;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.appButtonText {
+  display: flex;
+  flex-direction: column;
+}
+
+.appButtonSmall {
+  font-size: 0.65rem;
+  color: #AAAAAA;
+  font-family: 'Inter', sans-serif;
+}
+
+.appButtonBig {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Trust Badges */
+.trustBadges {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 28px 80px;
+  border-bottom: 1px solid #444444;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trustIcon {
+  font-size: 1.4rem;
+}
+
+.trustTitle {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 2px 0;
+}
+
+.trustSubtext {
+  font-size: 0.78rem;
+  color: #AAAAAA;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: 0.78rem;
+  color: #888888;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.connectText {
+  font-size: 0.82rem;
+  color: #AAAAAA;
+  font-family: 'Inter', sans-serif;
+}
+
+.socialIcon {
+  color: #AAAAAA;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.socialIcon:hover {
+  color: #ffffff;
+}
+
+/* Footer Bottom wrapper */
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+}
