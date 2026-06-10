@@ -1,15 +1,16 @@
+import type { IconType } from "react-icons";
 import styles from "./Specialties.module.css";
 
 interface SpecialtyIconProps {
   label: string;
-  emoji: string;
+  Icon: IconType;
 }
 
-const SpecialtyIcon = ({ label, emoji }: SpecialtyIconProps) => {
+const SpecialtyIcon = ({ label, Icon }: SpecialtyIconProps) => {
   return (
     <div className={styles.iconItem}>
       <div className={styles.iconCircle}>
-        <span className={styles.emoji}>{emoji}</span>
+        <Icon className={styles.icon} />
       </div>
       <p className={styles.iconLabel}>{label}</p>
     </div>

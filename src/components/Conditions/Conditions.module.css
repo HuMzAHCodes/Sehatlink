@@ -77,3 +77,83 @@
   margin: 0;
   line-height: 1.3;
 }
+
+
+
+.conditionsSection {
+  padding: 50px 80px;
+  background-color: #F5F5F5;
+  outline: 2px solid orange; /* debug border */
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.viewAll {
+  font-size: 0.95rem;
+  color: #1B2D6B;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.viewAll:hover {
+  opacity: 0.75;
+}
+
+.iconsRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.iconItem:hover .iconCircle {
+  background-color: #c9c9c9;
+  transform: translateY(-3px);
+}
+
+.iconCircle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #DCDCDC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #444444;
+}
+
+.iconLabel {
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+}

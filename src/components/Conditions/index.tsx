@@ -1,14 +1,23 @@
 import ConditionIcon from "./ConditionIcon";
 import styles from "./Conditions.module.css";
+import { GiThermometerHot, GiHeartOrgan, GiStomach } from "react-icons/gi";
+import { FaHeartbeat, FaBandAid, FaBaby } from "react-icons/fa";
+import { MdPregnantWoman, MdBloodtype } from "react-icons/md";
+import type { IconType } from "react-icons";
 
-const CONDITIONS_WITH_EMOJI = [
-  { label: "Fever", emoji: "🤒" },
-  { label: "Heart Attack", emoji: "❤️" },
-  { label: "Pregnancy", emoji: "🤰" },
-  { label: "High Blood Pressure", emoji: "🩺" },
-  { label: "Piles", emoji: "🩹" },
-  { label: "Diarrhea", emoji: "🤢" },
-  { label: "Acne", emoji: "😣" },
+interface ConditionItem {
+  label: string;
+  Icon: IconType;
+}
+
+const CONDITIONS_WITH_ICONS: ConditionItem[] = [
+  { label: "Fever", Icon: GiThermometerHot },
+  { label: "Heart Attack", Icon: GiHeartOrgan },
+  { label: "Pregnancy", Icon: MdPregnantWoman },
+  { label: "High Blood Pressure", Icon: MdBloodtype },
+  { label: "Piles", Icon: FaBandAid },
+  { label: "Diarrhea", Icon: GiStomach },
+  { label: "Acne", Icon: FaBaby },
 ];
 
 const Conditions = () => {
@@ -21,12 +30,8 @@ const Conditions = () => {
         </a>
       </div>
       <div className={styles.iconsRow}>
-        {CONDITIONS_WITH_EMOJI.map((item) => (
-          <ConditionIcon
-            key={item.label}
-            label={item.label}
-            emoji={item.emoji}
-          />
+        {CONDITIONS_WITH_ICONS.map((item) => (
+          <ConditionIcon key={item.label} label={item.label} Icon={item.Icon} />
         ))}
       </div>
     </section>
