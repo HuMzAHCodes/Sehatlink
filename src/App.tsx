@@ -5,6 +5,7 @@ import Specialties from "./components/Specialties";
 import Conditions from "./components/Conditions";
 import Partners from "./components/Partners";
 import NewsCarousel from "./components/NewsCarousel";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Conditions />
       <Partners />
       <NewsCarousel />
+      <Reviews />
     </div>
   );
 }
