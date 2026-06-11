@@ -1,3 +1,16 @@
+import cardOnline from "../assets/images/card-online.webp"
+import cardClinic from "../assets/images/card-clinic.webp"
+import cardLab from "../assets/images/card-lab.webp"
+import cardSurgery from "../assets/images/card-surgery.webp"
+import cardMedicine from "../assets/images/card-medicine.webp"
+
+
+
+
+
+
+
+
 export const NAV_LINKS = [
   { label: "Doctors", href: "#", hasDropdown: true },
   { label: "Hospitals", href: "#", hasDropdown: true },
@@ -8,31 +21,31 @@ export const NAV_LINKS = [
 
 export const FEATURE_CARDS = [
   {
-    image: "https://placehold.co/300x200",
+    image: cardOnline,
     badge: "27 Doctors Online Now",
     title: "Consult Online Now",
     description: "Instantly connect with Specialists through Video call.",
   },
   {
-    image: "https://placehold.co/300x200",
+   image: cardClinic,
     badge: null,
     title: "In-Clinic Appointments",
     description: "Book an In-Person visit to doctor's clinic.",
   },
   {
-    image: "https://placehold.co/300x200",
+    image: cardLab,
     badge: null,
     title: "Laboratory Tests",
     description: "Avail Exclusive discounts on lab tests.",
   },
   {
-    image: "https://placehold.co/300x200",
+    image: cardSurgery,
     badge: null,
     title: "Procedures & Surgeries",
     description: "Plan your surgeries at discounted rates.",
   },
   {
-    image: "https://placehold.co/300x200",
+    image: cardMedicine,
     badge: null,
     title: "Medicines",
     description: "Know your medicines better",
@@ -109,21 +122,21 @@ export const REVIEWS = [
     stars: 5,
     quote:
       "Great platform, very efficient and works really well on both phone and web. I think this is the most easiest way of booking appointments in Pakistan.",
-    avatar: "https://placehold.co/60x60",
+    avatar: "https://i.pravatar.cc/60?img=11",
     name: "Umer Fayyaz",
   },
   {
     stars: 5,
     quote:
       "A very helpful app for booking appointments and searching for the required doctors. Has made my life a lot easy. I would strongly recommend this to all.",
-    avatar: "https://placehold.co/60x60",
+    avatar: "https://i.pravatar.cc/60?img=32",
     name: "Aneeb Ryan",
   },
   {
     stars: 5,
     quote:
       "Literally the best website to book the appointments online for Doctors. The service is great, helpline guys are very cooperative and understanding.",
-    avatar: "https://placehold.co/60x60",
+    avatar: "https://i.pravatar.cc/60?img=47",
     name: "Zainab Tariq",
   },
 ]
