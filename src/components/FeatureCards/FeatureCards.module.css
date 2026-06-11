@@ -3,7 +3,7 @@
   gap: 16px;
   padding: 40px 80px;
   background-color: #F5F5F5;
-  outline: 2px solid green; /* debug border */
+  /* outline: 2px solid green; debug border */
 }
 
 .card {

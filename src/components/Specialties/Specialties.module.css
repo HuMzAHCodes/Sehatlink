@@ -1,7 +1,7 @@
 .specialtiesSection {
   padding: 50px 80px;
   background-color: #ffffff;
-  outline: 2px solid purple; /* debug border */
+  /* outline: 2px solid purple; debug border */
 }
 
 /* Header Row */
@@ -85,7 +85,7 @@
 .specialtiesSection {
   padding: 50px 80px;
   background-color: #ffffff;
-  outline: 2px solid purple; /* debug border */
+  /* outline: 2px solid purple; debug border */
 }
 
 .sectionHeader {

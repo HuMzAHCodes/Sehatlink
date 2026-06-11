@@ -1,7 +1,7 @@
 .conditionsSection {
   padding: 50px 80px;
   background-color: #F5F5F5;
-  outline: 2px solid orange; /* debug border */
+  /* outline: 2px solid orange; debug border */
 }
 
 /* Header Row */
@@ -83,7 +83,7 @@
 .conditionsSection {
   padding: 50px 80px;
   background-color: #F5F5F5;
-  outline: 2px solid orange; /* debug border */
+  /* outline: 2px solid orange; debug border */
 }
 
 .sectionHeader {

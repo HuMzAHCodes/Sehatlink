@@ -1,8 +1,8 @@
 .newsSection {
   padding: 60px 80px;
   background-color: #F5F5F5;
-  outline: 2px solid brown; /* debug border */
-}
+  /* outline: 2px solid brown; /* debug border */
+} 
 
 .sectionTitle {
   font-size: 1.4rem;

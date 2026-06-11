@@ -7,7 +7,7 @@
   min-height: 380px;
   position: relative;
   overflow: hidden;
-  outline: 2px solid blue; /* debug border */
+  /* outline: 2px solid blue; debug border */
 }
 
 /* Left Side */
