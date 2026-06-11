@@ -1,7 +1,8 @@
 .partnersSection {
-  padding: 60px 80px;
+  padding: 60px 0;
   background-color: #ffffff;
   outline: 2px solid teal; /* debug border */
+  overflow: hidden;
 }
 
 /* Header */
@@ -10,8 +11,9 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   text-align: center;
+  padding: 0 80px;
 }
 
 .sectionTitle {
@@ -47,12 +49,19 @@
   opacity: 0.9;
 }
 
-/* Logos Grid */
-.logosGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+/* Marquee */
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
   border-top: 1px solid #E0E0E0;
-  border-left: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  cursor: grab;
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  will-change: transform;
 }
 
 /* Single Logo Cell */
@@ -60,12 +69,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 24px;
+  padding: 32px 48px;
   border-right: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
-  min-height: 120px;
+  min-width: 180px;
+  flex-shrink: 0;
   transition: background-color 0.2s;
-  cursor: pointer;
 }
 
 .logoCell:hover {
@@ -73,9 +81,10 @@
 }
 
 .logoName {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #444444;
   font-family: 'Inter', sans-serif;
   text-align: center;
+  white-space: nowrap;
 }

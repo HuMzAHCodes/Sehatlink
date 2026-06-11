@@ -88,6 +88,14 @@ export const PARTNERS = [
   { name: "FHM Engage" },
   { name: "Blink" },
   { name: "Chakor" },
+  { name: "Mobilink Bank" },
+  { name: "SIMOSA" },
+  { name: "Yango" },
+  { name: "Jubilee Life" },
+  { name: "Daraz" },
+  { name: "Jazz" },
+  { name: "Telenor Health" },
+  { name: "Sehat Kahani" },
 ]
 
 export const NEWS_ITEMS = [
