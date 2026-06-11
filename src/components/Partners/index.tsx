@@ -8,7 +8,6 @@ const Partners = () => {
   const marqueeRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<gsap.core.Tween | null>(null);
 
-  // duplicate partners so the loop is seamless
   const duplicatedPartners = [...PARTNERS, ...PARTNERS];
 
   useEffect(() => {
@@ -53,7 +52,11 @@ const Partners = () => {
       >
         <div className={styles.marqueeTrack} ref={marqueeRef}>
           {duplicatedPartners.map((partner, index) => (
-            <PartnerLogo key={`${partner.name}-${index}`} name={partner.name} />
+            <PartnerLogo
+              key={`${partner.name}-${index}`}
+              name={partner.name}
+              logo={partner.logo}
+            />
           ))}
         </div>
       </div>

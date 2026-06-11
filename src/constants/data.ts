@@ -5,7 +5,14 @@ import cardSurgery from "../assets/images/card-surgery.webp"
 import cardMedicine from "../assets/images/card-medicine.webp"
 
 
-
+import rakServices from "../assets/images/partners/pak_services.webp"
+import caper from "../assets/images/partners/caper.webp"
+import byonyks from "../assets/images/partners/byonyks.webp"
+import glowfishlabs from "../assets/images/partners/glowfishlabs.webp"
+import maqsad from "../assets/images/partners/maqsad.webp"
+import fhmEngage from "../assets/images/partners/fhm_engage.webp"
+import blink from "../assets/images/partners/blink.webp"
+import chakor from "../assets/images/partners/chakor.webp"
 
 
 
@@ -80,22 +87,14 @@ export const CONDITIONS = [
 ]
 
 export const PARTNERS = [
-  { name: "RAK Services" },
-  { name: "Caper" },
-  { name: "Byonyks" },
-  { name: "GlowFishLabs" },
-  { name: "Maqsad" },
-  { name: "FHM Engage" },
-  { name: "Blink" },
-  { name: "Chakor" },
-  { name: "Mobilink Bank" },
-  { name: "SIMOSA" },
-  { name: "Yango" },
-  { name: "Jubilee Life" },
-  { name: "Daraz" },
-  { name: "Jazz" },
-  { name: "Telenor Health" },
-  { name: "Sehat Kahani" },
+  { name: "RAK Services", logo: rakServices },
+  { name: "Caper", logo: caper },
+  { name: "Byonyks", logo: byonyks },
+  { name: "GlowFishLabs", logo: glowfishlabs },
+  { name: "Maqsad", logo: maqsad },
+  { name: "FHM Engage", logo: fhmEngage },
+  { name: "Blink", logo: blink },
+  { name: "Chakor", logo: chakor },
 ]
 
 export const NEWS_ITEMS = [
