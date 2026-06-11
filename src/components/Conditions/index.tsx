@@ -1,7 +1,7 @@
 import ConditionIcon from "./ConditionIcon";
 import styles from "./Conditions.module.css";
 import { GiThermometerHot, GiHeartOrgan, GiStomach } from "react-icons/gi";
-import { FaHeartbeat, FaBandAid, FaBaby } from "react-icons/fa";
+import { FaBandAid, FaBaby } from "react-icons/fa";
 import { MdPregnantWoman, MdBloodtype } from "react-icons/md";
 import type { IconType } from "react-icons";
 
