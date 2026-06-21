@@ -1,0 +1,318 @@
+.page {
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  padding: 40px 80px;
+  font-family: 'Inter', sans-serif;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: #ffffff;
+  border: 1.5px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: background 0.2s;
+}
+
+.backButton:hover {
+  background-color: #f0f3ff;
+  border-color: #1B2D6B;
+  color: #1B2D6B;
+}
+
+/* Two column layout */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Doctor Info Section */
+.infoSection {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.topRow {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.avatarWrapper {
+  flex-shrink: 0;
+  width: 160px;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #E8EEF9;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctorMeta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doctorName {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.specialty {
+  font-size: 1rem;
+  color: #1B2D6B;
+  font-weight: 600;
+  margin: 0;
+}
+
+.metaGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #444444;
+}
+
+.metaIcon {
+  color: #1B2D6B;
+  flex-shrink: 0;
+}
+
+/* Stats Row */
+.statsRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #F5F5F5;
+  padding: 16px 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.starIcon {
+  color: #F5A623;
+}
+
+.ratingValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.feeValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1B2D6B;
+  margin: 0;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: #888888;
+  margin: 0;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background-color: #E0E0E0;
+}
+
+/* About */
+.aboutSection {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 24px;
+}
+
+.aboutTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.aboutText {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Appointment Section */
+.appointmentSection {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.subsectionTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Days */
+.daysRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dayButton {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #E0E0E0;
+  background: #ffffff;
+  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  color: #444444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dayButton:hover {
+  border-color: #1B2D6B;
+  color: #1B2D6B;
+}
+
+.dayButtonActive {
+  background-color: #1B2D6B;
+  border-color: #1B2D6B;
+  color: #ffffff;
+}
+
+/* Time Slots */
+.slotsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.slotButton {
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: 1.5px solid #E0E0E0;
+  background: #ffffff;
+  font-size: 0.82rem;
+  font-family: 'Inter', sans-serif;
+  color: #444444;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.slotButton:hover {
+  border-color: #1B2D6B;
+  color: #1B2D6B;
+}
+
+.slotButtonActive {
+  background-color: #E8EEF9;
+  border-color: #1B2D6B;
+  color: #1B2D6B;
+  font-weight: 600;
+}
+
+/* Book Button */
+.bookButton {
+  width: 100%;
+  padding: 14px;
+  background-color: #F5A623;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 8px;
+}
+
+.bookButton:hover {
+  opacity: 0.9;
+}
+
+/* Confirmation */
+.confirmation {
+  background-color: #e6f4ea;
+  border: 1px solid #27AE60;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 0.88rem;
+  color: #1a6e35;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Not Found */
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #666666;
+}

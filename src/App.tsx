@@ -1,26 +1,20 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeatureCards from "./components/FeatureCards";
-import Specialties from "./components/Specialties";
-import Conditions from "./components/Conditions";
-import Partners from "./components/Partners";
-import NewsCarousel from "./components/NewsCarousel";
-import Reviews from "./components/Reviews";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import DoctorsPage from "./pages/DoctorsPage";
+import DoctorDetailPage from "./pages/DoctorDetailPage";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <FeatureCards />
-      <Specialties />
-      <Conditions />
-      <Partners />
-      <NewsCarousel />
-      <Reviews />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/doctors/:specialty" element={<DoctorsPage />} />
+        <Route
+          path="/doctors/:specialty/:doctorId"
+          element={<DoctorDetailPage />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
