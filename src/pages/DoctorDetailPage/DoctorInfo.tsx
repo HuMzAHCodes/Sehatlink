@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import { FiClock, FiMapPin, FiAward } from "react-icons/fi";
 import styles from "./DoctorDetailPage.module.css";
+import doctorPlaceholder from "../../assets/images/doctor-placeholder.webp";
 
 interface DoctorInfoProps {
   name: string;
@@ -31,7 +32,7 @@ const DoctorInfo = ({
     <div className={styles.infoSection}>
       <div className={styles.topRow}>
         <div className={styles.avatarWrapper}>
-          <img src={avatar} alt={name} className={styles.avatar} />
+          <img src={doctorPlaceholder} alt={name} className={styles.avatar} />
         </div>
 
         <div className={styles.doctorMeta}>
