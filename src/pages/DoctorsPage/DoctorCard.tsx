@@ -28,7 +28,6 @@ const DoctorCard = ({
   rating,
   reviews,
   fee,
-  avatar,
 }: DoctorCardProps) => {
   const navigate = useNavigate();
 

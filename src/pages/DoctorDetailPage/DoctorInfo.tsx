@@ -25,7 +25,7 @@ const DoctorInfo = ({
   rating,
   reviews,
   fee,
-  avatar,
+
   about,
 }: DoctorInfoProps) => {
   return (
