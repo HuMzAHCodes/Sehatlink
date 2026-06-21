@@ -4,7 +4,7 @@ const FooterBrand = () => {
   return (
     <div className={styles.brandColumn}>
       <a href="#" className={styles.footerLogo}>
-        ola<span className={styles.footerLogoAccent}>doc</span>
+        Sehat<span className={styles.footerLogoAccent}>link</span>
       </a>
       <p className={styles.brandDescription}>
         Book appointments with the best Doctors and Specialists such as

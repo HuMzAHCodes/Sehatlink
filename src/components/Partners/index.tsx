@@ -42,7 +42,7 @@ const Partners = () => {
           Avail Exclusive partnership benefits for your brand, clients and
           employees.
         </p>
-        <button className={styles.partnerButton}>Partner with oladoc</button>
+        <button className={styles.partnerButton}>Partner with Sehatlink</button>
       </div>
 
       <div
